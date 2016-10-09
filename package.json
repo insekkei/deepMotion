@@ -7,8 +7,10 @@
     "startDev": "nodemon serverDev.js --ignore app/ --exec babel-node",
     "build": "webpack --watch --config ./webpack-dev-server.config.js",
     "release": "webpack --config ./webpack-production.config.js",
-    "start": "node ./server.js",
-    "buildServer": "babel serverDev.js server.js"
+    "start": "forever start server.js",
+    "buildServer": "babel serverDev.js server.js",
+    "stopall": "forever stopall",
+    "checkstatus": "forever list"
   },
   "keywords": [
     "es6",
@@ -36,6 +38,7 @@
     "express": "^4.16.1",
     "express-history-api-fallback": "^2.2.1",
     "extract-text-webpack-plugin": "^1.0.1",
+    "forever": "^0.15.3",
     "html-webpack-plugin": "^2.16.1",
     "json-loader": "^0.5.4",
     "less": "^2.7.2",

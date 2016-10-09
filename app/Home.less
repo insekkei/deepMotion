@@ -1,30 +1,26 @@
 .Home {
+  .HeaderWrapper {
+    background: rgba(0,0,0,.46);
+  }
   .banner {
-    padding: 20px 0 40px;
+    padding: 0 0 40px;
+    height: 800px;
     background: url(./assets/config/resource/banner/banner-index.jpg) no-repeat;
     background-size: cover;
     text-align: center;
     .info {
-      width: 500px;
-      margin: 30px auto;
-      padding: 60px 50px;
-      line-height: 1.5em;
-      background: rgba(12, 128, 131, .5);
-      border-radius: 5px;
-      font-size: 16px;
+      width: 998px;
+      margin: 226px auto 50px;
+      padding: 60px 0;
+      line-height: 45px;
+      font-size: 32px;
       color: #fff;
-      .logo {
-        width: 300px;
-        height: 40px;
-        margin-bottom: 20px;
-        background: url(./assets/image/logo-banner.png) no-repeat center;
-        background-size: contain;
-      }
     }
     .Joinus {
-      padding: 8px 40px;
+      padding: 16px 86px;
       border: 1px solid #04D5FF;
       border-radius: 3px;
+      font-size: 24px;
       color: #04D5FF;
       &:hover {
         background: #3A4649;
@@ -33,7 +29,6 @@
   }
   .App-header {
     margin: 0 auto;
-    padding: 20px 0;
   }
   .Advantage {
     background: #41D1EE;
@@ -106,12 +101,12 @@
         width: 800px;
       }
       .AdvantageItem {
-        display: flex;
-        align-items: center;
         padding: 20px 20px 20px 114px;
         .title {
-          margin-right: 30px;
-          padding: 0 20px 0 0;
+          margin-right: 0;
+          padding: 10px 0;
+          position: relative;
+          left: -20px;
         }
         &:before {
           width: 54px;
@@ -121,16 +116,6 @@
         .desc {
           li {
             position: relative;
-            &:before {
-              content: '';
-              position: absolute;
-              display: inline-block;
-              width: 1px;
-              height: 100%;
-              background: #fff;
-              left: -30px;
-              top: 0;
-            }
           }
         }
       }

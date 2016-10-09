@@ -12,9 +12,10 @@ class Home extends Component {
     return (
       <div className="Home">
         <div className="banner">
-          <Header lan={lan} changeLan={this.props.changeLan} />
+          <div className="HeaderWrapper">
+            <Header lan={lan} changeLan={this.props.changeLan} />
+          </div>
           <div className="info">
-            <span className="logo"></span>
             <p className="slogan">{text.WEBSITE.SLOGAN[lan]}</p>
           </div>
           <Link to="career" className="Joinus">{text.TEAM.LABEL.JOINUS[lan]}</Link>
