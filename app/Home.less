@@ -287,6 +287,9 @@
 
 @media (max-width: 690px) {
   .Home {
+    .module-title {
+      padding: 20px 0;
+    }
     .banner {
       height: 300px;
       padding-top: 0;
@@ -306,7 +309,9 @@
     .Advantage {
       &.EN,
       &.ZH {
+        padding: 20px 0 0;
         .AdvantageWrapper {
+          margin: 0;
           width: 100%;
         }
         .AdvantageItem {
@@ -358,11 +363,18 @@
       }
     }
     .Products {
+      padding-bottom: 20px;
+      .ProductText h3 {
+        font-size: 20px;
+      }
       .ProductItem {
+        width: 90%;
         display: block;
-        padding: 20px 0;
-        img {
+        padding: 0 0 10px;
+        img,
+        .ProductText {
           width: 100%;
+          margin: 10px 0;
         }
       }
     }
