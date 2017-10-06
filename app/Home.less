@@ -1,0 +1,292 @@
+.Home {
+  .banner {
+    padding: 20px 0 40px;
+    background: url(./assets/config/resource/banner/banner-index.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    .info {
+      width: 500px;
+      margin: 30px auto;
+      padding: 60px 50px;
+      line-height: 1.5em;
+      background: rgba(12, 128, 131, .5);
+      border-radius: 5px;
+      font-size: 16px;
+      color: #fff;
+      .logo {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+        background: url(./assets/image/logo-banner.png) no-repeat center;
+        background-size: contain;
+      }
+    }
+    .Joinus {
+      padding: 8px 40px;
+      border: 1px solid #04D5FF;
+      border-radius: 3px;
+      color: #04D5FF;
+    }
+  }
+  .App-header {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .Advantage {
+    background: #41D1EE;
+    color: #fff;
+    padding: 40px 0;
+    .title {
+      font-size: 2em;
+    }
+    .AdvantageItem {
+      position: relative;
+      padding: 40px 20px 20px 114px;
+      &:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        width: 74px;
+        height: 74px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top left;
+      }
+    }
+    .item0:before {
+      background-image: url(./assets/image/icon1.png);
+    }
+    .item1:before {
+      background-image: url(./assets/image/icon2.png);
+    }
+    .item2:before {
+      background-image: url(./assets/image/icon3.png);
+    }
+    .item3:before {
+      background-image: url(./assets/image/icon4.png);
+    }
+    .AdvantageWrapper {
+      width: 1024px;
+      margin: 10px auto;
+      line-height: 1.5em;
+    }
+    &.ZH {
+      .AdvantageItem {
+        display: inline-block;
+        width: 50%;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        border: 1px solid #fff;
+        &:first-child {
+          border-right: 0;
+          border-bottom: 0;
+        }
+        &:nth-child(2) {
+          border-bottom: 0;
+        }
+        &:nth-child(3) {
+          border-right: 0;
+        }
+      }
+      .title {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+      .desc {
+        margin-left: 20px;
+      }
+    }
+
+    &.EN {
+      .AdvantageWrapper {
+        width: 800px;
+      }
+      .AdvantageItem {
+        display: flex;
+        align-items: center;
+        padding: 20px 20px 20px 114px;
+        .title {
+          margin-right: 30px;
+          padding: 0 20px 0 0;
+        }
+        &:before {
+          width: 54px;
+          height: 54px;
+          top: 12px;
+        }
+        .desc {
+          li {
+            position: relative;
+            &:before {
+              content: '';
+              position: absolute;
+              display: inline-block;
+              width: 1px;
+              height: 100%;
+              background: #fff;
+              left: -30px;
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .module-title {
+    text-align: center;
+    padding: 40px 0;
+  }
+  .Products {
+    background: #fff;
+    .ProductItem {
+      display: flex;
+      align-items: center;
+      width: 1024px;
+      margin: 0 auto;
+      padding: 40px 0 80px;
+      img {
+        width: 50%;
+        height: auto;
+        margin: 10px;
+      }
+      &.item0 {
+        flex-direction: row-reverse;
+      }
+    }
+    .ProductText {
+      line-height: 1.5em;
+      margin: 10px;
+      h3 {
+        font-size: 24px;
+        line-height: 1.5em;
+        color: #4A90E2;
+      }
+      p {
+        margin: 10px 0;
+      }
+      .Labels {
+        font-weight: normal;
+      }
+    }
+  }
+
+  .Team {
+    padding: 20px 0 50px;
+    background: #f4f4f4;
+    .Members {
+      display: flex;
+      width: 1024px;
+      margin: 0 auto;
+    }
+    .MemberItem {
+      flex: 1;
+      text-align: center;
+      line-height: 1.3em;
+      >div {
+        margin: 14px 0;
+      }
+      .intro {
+        margin: 14px 20px;
+        text-align: left;
+      }
+      .image {
+        width: 150px;
+        height: 150px;
+        margin: 20px auto;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+    .item0 .image{
+      background-image: url(./assets/config/resource/team/team1.png);
+    }
+    .item1 .image{
+      background-image: url(./assets/config/resource/team/team2.png);
+    }
+    .item2 .image{
+      background-image: url(./assets/config/resource/team/team3.png);
+    }
+    .item3 .image{
+      background-image: url(./assets/config/resource/team/team4.png);
+    }
+    .name {
+      font-size: 24px;
+    }
+    .qualifications {
+      >span {
+        padding: 0 10px;
+        border-right: 1px solid #999;
+        &:last-child {
+          border-right: 0;
+        }
+      }
+      .Number {
+        font-size: 1.3em;
+        font-weight: normal;
+      }
+    }
+    .Joinus {
+      margin: 30px 0 10px;
+      text-align: center;
+
+      a {
+        padding: 5px 60px;
+        line-height: 25px;
+        border: 1px solid #4A4A4A;
+        color: #4A4A4A;
+      }
+    }
+  }
+
+  .Press {
+    padding-bottom: 80px;
+    background: #fff;
+    color: #9B9B9B;
+    .PressWrapper {
+      width: 1024px;
+      margin: 0 auto;
+      display: flex;
+    }
+    .PressItem {
+      flex: 1;
+      padding: 15px 20px;
+      margin-right: 20px;
+      background: #F5F5F5;
+      border: 1px solid #CFCFCF;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        display: block;
+      }
+      img {
+        width: 100%;
+      }
+      h3 {
+        margin: 10px 0;
+        font-weight: normal;
+        color: #444;
+      }
+      .ExtInfo {
+        display: flex;
+        margin-top: 10px;
+        font-size: 11px;
+        .date {
+          margin-left: auto;
+        }
+      }
+    }
+    .AllPressLink {
+      width: 1024px;
+      margin: 10px auto;
+      text-align: right;
+      a {
+        color: #4A90E2;
+      }
+    }
+  }
+}
