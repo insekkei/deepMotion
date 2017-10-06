@@ -60,9 +60,8 @@ class Home extends Component {
           <Header lan={lan} changeLan={this.props.changeLan} />
         </div>
 
-        <div className="Introduction">
-          <div className="image">
-          </div>
+        <div className="Introduction HorizonWrapper">
+          <img className="image" src="/config/resource/career/introduction.png" />
           <div className="text">
           {
             joinusText.INTRODUCTION[lan].map((item, index) => (
@@ -78,7 +77,7 @@ class Home extends Component {
           <h2 className="module-title">
             {joinusText.LABEL.HIRETITLE[lan]}
           </h2>
-          <ul className="PositionWrapper">
+          <ul className="PositionWrapper HorizonWrapper">
             {
               joinusText.POSITIONS.map((item, index) => (
                 <li key={index}

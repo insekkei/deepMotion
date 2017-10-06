@@ -42,14 +42,14 @@ class App extends Component {
     return (
       <div className="App Index">
         {childrenWithProps}
-        <div className="App-footer">
+        <div className="App-footer HorizonWrapper">
           <div className="info">
-            <span className="logo"></span>
+            <img src={lan === 'EN' ? '/image/logo-bottom.png' : '/image/logo-ZH.png'} className="logo" />
             <p className="slogan">{text.WEBSITE.SLOGAN[lan]}</p>
             <div className="WeChat">
               <p className="WeChat-title">{text.BOTTOM.WECHAT[lan]}</p>
               <div className="WeChat-content">
-                <div className="qrcode"></div>
+                <img src="/image/wechat.png" className="qrcode" />
                 <div className="contact">
                   <p className="tel">{text.BOTTOM.TEL}</p>
                   <p className="more">

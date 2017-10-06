@@ -29,7 +29,6 @@
     }
   }
   .App-header {
-    width: 1024px;
     margin: 0 auto;
     padding: 20px 0;
   }
@@ -69,7 +68,6 @@
       background-image: url(./assets/image/icon4.png);
     }
     .AdvantageWrapper {
-      width: 1024px;
       margin: 10px auto;
       line-height: 1.5em;
     }
@@ -144,7 +142,6 @@
     .ProductItem {
       display: flex;
       align-items: center;
-      width: 1024px;
       margin: 0 auto;
       padding: 40px 0 80px;
       img {
@@ -178,7 +175,6 @@
     background: #f4f4f4;
     .Members {
       display: flex;
-      width: 1024px;
       margin: 0 auto;
     }
     .MemberItem {
@@ -247,7 +243,6 @@
     background: #fff;
     color: #9B9B9B;
     .PressWrapper {
-      width: 1024px;
       margin: 0 auto;
       display: flex;
     }
@@ -281,11 +276,94 @@
       }
     }
     .AllPressLink {
-      width: 1024px;
       margin: 10px auto;
       text-align: right;
       a {
         color: #4A90E2;
+      }
+    }
+  }
+}
+
+@media (max-width: 690px) {
+  .Home {
+    .banner {
+      height: 300px;
+      padding-top: 0;
+      .info,
+      .Joinus {
+        display: none;
+      }
+      .App-header {
+        width: 100%;
+        padding: 20px 10px;
+        background:#17495F;
+        background:-moz-linear-gradient(left, #115A78, #0E212A);
+        background:-webkit-gradient(linear, 0 0, 0 right, from(#115A78), to(#0E212A));
+        background:-o-linear-gradient(left, #115A78, #0E212A);
+      }
+    }
+    .Advantage {
+      &.EN,
+      &.ZH {
+        .AdvantageWrapper {
+          width: 100%;
+        }
+        .AdvantageItem {
+          display: block;
+          width: 100%;
+          border: 0;
+          padding: 20px 20px 20px 90px;
+          &:before {
+            width: 43px;
+            height: 43px;
+            top: 12px;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            left: 5%;
+            width: 90%;
+            height: 1px;
+            background: #fff;
+          }
+          &:last-child:after {
+            display: none;
+          }
+          .title {
+            font-weight: normal;
+          }
+          .desc {
+            margin: 30px -48px;
+            width: 100%;
+          }
+          .desc li:before {
+            display: none;
+          }
+        }
+      }
+    }
+    .Team {
+      .MiniScreenWrapper {
+        overflow: hidden;
+      }
+      .HorizonWrapper {
+        width: 1300px;
+        overflow-x: auto;
+      }
+      .MemberItem {
+        background: #fff;
+        margin: 0 10px;
+        border: 1px solid #CFCFCF;
+      }
+    }
+    .Products {
+      .ProductItem {
+        display: block;
+        padding: 20px 0;
+        img {
+          width: 100%;
+        }
       }
     }
   }

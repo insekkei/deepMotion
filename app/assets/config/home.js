@@ -1,9 +1,3 @@
-import productImg1 from './resource/products/product1.png'
-import productImg2 from './resource/products/product2.png'
-
-import pressImg1 from './resource/press/press1.png'
-import pressImg2 from './resource/press/press2.png'
-
 const text = {
   WEBSITE: {
     LOGO: {
@@ -112,7 +106,7 @@ const text = {
         EN: 'Consumer-level | Most advanced ADAS | Real-time',
         ZH: '消费级立体相机 ｜ 最先进的ADAS ｜ 10厘米精度 ｜ 实时'
       },
-      IMAGE: productImg1
+      IMAGE: '/config/resource/products/product1.png'
     }, {
       TITLE: {
         EN: 'DeepMotion Cloud: An AI that fuses billion miles of data.',
@@ -126,7 +120,7 @@ const text = {
         EN: '3D semantic maps | 10cm Accuracy | Crowdsourced',
         ZH: '十亿级别观测值 ｜ 3D语义地图 ｜ 众包'
       },
-      IMAGE: productImg2
+      IMAGE: '/config/resource/products/product2.png'
     }]
   },
 
@@ -264,7 +258,7 @@ const text = {
         EN: 'The DeepMotion sensor DM-100 is an intelligent ADAS device made of consumer-level stereo cameras, GPS and IMU modules. It not only provides state-of-the-arts ADAS functions such as Lane Departure Warning, Pedestrian Detection, Collision Warning, but also performs localization at 10cm accuracy without replying on RTK. Equipped with our pre-installed HD maps, DM-100 is able to perform environment sensing',
         ZH: '无图模式下，显示这是一行内文，DeepMotion宣布与Mobileye实现技术对比标，发布ADAS产品，无图模式下，显示这是一行内文，Deep Motion宣布与Mobileye实现技术对比标，发布ADAS产品。无图模式下，显示这是一行内文eye实现技术对比标，发布ADAS产品，无图模式下，显示这是一行内文，Deep Motion宣布与Mobileye实现技术对比标，发布ADAS产品。无图模式下，显示这是一行内文'
       },
-      PIC: pressImg1,
+      PIC: '/config/resource/press/press1.png',
       DATE: '2017-10-01',
       LINK: '',
       SOURCE: 'SINA'

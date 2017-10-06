@@ -7,30 +7,24 @@
     background:-o-linear-gradient(left, #115A78, #0E212A);
   }
   .App-header {
-    width: 1200px;
     margin: 0 auto;
     padding: 10px 0;
   }
   .Introduction {
     display: flex;
     align-items: center;
-    width: 1200px;
     margin: 0 auto;
     padding: 20px 0 40px;
   }
+  .image {
+    width: 500px;
+  }
   .text {
-    margin-left: auto;
-    width: 370px;
+    margin-left: 100px;
     font-weight: normal;
     p {
       margin: 1em 0;
     }
-  }
-  .image {
-    width: 687px;
-    height: 327px;
-    background: url(./assets/config/resource/career/introduction.png) no-repeat center;
-    background-size: contain;
   }
   .module-title {
     text-align: center;
@@ -96,7 +90,6 @@
   .PositionWrapper {
     display: flex;
     flex-wrap: wrap;
-    width: 1200px;
     margin: 0 auto;
     padding-bottom: 40px;
 
@@ -127,6 +120,39 @@
       }
       p {
         color: #9B9B9B;
+      }
+    }
+  }
+}
+
+@media (max-width: 690px) {
+  .Career {
+    .Introduction {
+      display: block;
+      img {
+        width: 100%;
+      }
+      .text {
+        margin-left: 0;
+      }
+    }
+    .App-header {
+      padding: 20px 10px;
+    }
+    .PositionWrapper {
+      display: block;
+      .PositionItem {
+        padding: 20px 0 20px 30px
+      }
+    }
+    .Modal .ModalWrapper {
+      width: 100%;
+      left: 0;
+      margin-left: 0;
+      .Close {
+        right: 0;
+        top: -15px;
+        color: #333;
       }
     }
   }

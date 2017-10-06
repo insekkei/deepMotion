@@ -21,7 +21,7 @@ class Home extends Component {
         </div>
 
         <div className={`Advantage ${lan}`}>
-          <div className="AdvantageWrapper">
+          <div className="AdvantageWrapper HorizonWrapper">
           {
             text.ADVANTAGE.map((item, index) => (
               <div className={`AdvantageItem item${index}`} key={index}>
@@ -43,7 +43,7 @@ class Home extends Component {
           </h2>
           {
             text.PRODUCTS.ITEMS.slice(0, 2).map((item, index) => (
-              <div className={`ProductItem item${index}`} key={index}>
+              <div className={`ProductItem HorizonWrapper item${index}`} key={index}>
                 <div className="ProductText">
                   <h3>{item.TITLE[lan]}</h3>
                   <p>{item.DESCRIPTION[lan]}</p>
@@ -57,7 +57,8 @@ class Home extends Component {
 
         <div className="Team">
           <h2 className="module-title">{text.TEAM.LABEL.MODULETITLE[lan]}</h2>
-          <div className="Members">
+          <div className="MiniScreenWrapper">
+            <div className="Members HorizonWrapper">
             {
               text.TEAM.MEMBERS.map((item, index) => (
                 <div className={`MemberItem item${index}`} key={index}>
@@ -84,6 +85,7 @@ class Home extends Component {
                 </div>
               ))
             }
+            </div>
           </div>
 
           <div className="Joinus">
@@ -94,7 +96,7 @@ class Home extends Component {
         {
           text.PRESS.ITEMS.length > 2 && <div className="Press">
             <h2 className="module-title">{text.PRESS.LABEL.MODULETITLE[lan]}</h2>
-            <div className="PressWrapper">
+            <div className="PressWrapper HorizonWrapper">
               {
                 text.PRESS.ITEMS.slice(0, 3).map((item, index) => (
                   <div className="PressItem" key={index}>
@@ -114,7 +116,7 @@ class Home extends Component {
               }
             </div>
 
-            <div className="AllPressLink">
+            <div className="AllPressLink HorizonWrapper">
               <Link to="press">{text.PRESS.LABEL.ALLREPORT[lan]}</Link> &gt;
             </div>
           </div>
