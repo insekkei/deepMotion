@@ -61,7 +61,9 @@ class Career extends Component {
         </div>
 
         <div className="Introduction HorizonWrapper">
-          <img className="image" src="/config/resource/career/introduction.png" />
+          <div className="image">
+            <img src="/config/resource/career/introduction.png" />
+          </div>
           <div className="text">
           {
             joinusText.INTRODUCTION[lan].map((item, index) => (

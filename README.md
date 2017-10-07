@@ -1,5 +1,3 @@
-$ npm install
-
 $ npm run release
 
 $ npm start

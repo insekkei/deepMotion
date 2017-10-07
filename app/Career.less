@@ -16,8 +16,12 @@
     margin: 0 auto;
     padding: 20px 0 40px;
   }
-  .image {
-    width: 500px;
+  .image,
+  .text {
+    flex: 1;
+  }
+  img {
+    width: 100%;
   }
   .text {
     margin-left: 100px;
@@ -54,7 +58,7 @@
     .ModalContent {
       height: 317px;
       overflow: scroll;
-      color: #9B9B9B;
+      color: #666;
     }
     h3 {
       font-weight: bold;
@@ -129,6 +133,8 @@
   .Career {
     .Introduction {
       display: block;
+      width: 100%;
+      padding: 10px;
       img {
         width: 100%;
       }
@@ -141,6 +147,8 @@
     }
     .PositionWrapper {
       display: block;
+      width: 100%;
+      padding: 0 10px;
       .PositionItem {
         padding: 20px 0 20px 30px;
         p {

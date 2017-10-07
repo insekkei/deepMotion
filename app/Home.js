@@ -49,7 +49,9 @@ class Home extends Component {
                   <p>{item.DESCRIPTION[lan]}</p>
                   <p className="Labels">{item.LABELS[lan]}</p>
                 </div>
-                <img src={item.IMAGE} />
+                <div className="image">
+                  <img src={item.IMAGE} />
+                </div>
               </div>
             ))
           }

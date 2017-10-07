@@ -49,8 +49,7 @@ const config = {
                 test: /\.less$/,
                 loader: 'style!css!less'
             },
-            { test: /\.woff(2)?(\?[a-z0-9#=&.]+)?$/, loader: 'url?limit=10000&mimetype=application/font-woff' },
-            { test: /\.(ttf|eot|svg|png|jpg|gif)(\?[a-z0-9#=&.]+)?$/, loader: 'file' }
+            { test: /\.(ttf|eot|svg|png|jpg|gif)(\?[a-z0-9#=&.]+)?$/, loader: 'url?limit=1000000' }
         ]
     }
 };

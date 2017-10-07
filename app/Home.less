@@ -26,6 +26,9 @@
       border: 1px solid #04D5FF;
       border-radius: 3px;
       color: #04D5FF;
+      &:hover {
+        background: #3A4649;
+      }
     }
   }
   .App-header {
@@ -143,19 +146,23 @@
       display: flex;
       align-items: center;
       margin: 0 auto;
-      padding: 40px 0 80px;
+      padding: 0 0 40px;
       img {
-        width: 50%;
-        height: auto;
+        width: 100%;
         margin: 10px;
       }
       &.item0 {
         flex-direction: row-reverse;
       }
     }
+    .ProductText,
+    .image {
+      flex: 1;
+      padding: 20px;
+    }
     .ProductText {
       line-height: 1.5em;
-      margin: 10px;
+
       h3 {
         font-size: 24px;
         line-height: 1.5em;
@@ -241,6 +248,9 @@
         line-height: 25px;
         border: 1px solid #4A4A4A;
         color: #4A4A4A;
+        &:hover {
+          background: #C6C6C6;
+        }
       }
     }
   }
@@ -384,10 +394,14 @@
         width: 90%;
         display: block;
         padding: 0 0 10px;
-        img,
+        img {
+          margin: 0;
+        }
+        .image,
         .ProductText {
           width: 100%;
           margin: 10px 0;
+          padding: 0;
         }
       }
     }
