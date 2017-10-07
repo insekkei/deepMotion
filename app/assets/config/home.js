@@ -1,3 +1,4 @@
+import PRESS from './press'
 const text = {
   WEBSITE: {
     LOGO: {
@@ -169,7 +170,8 @@ const text = {
       INTRODUCTION: {
         EN: 'Lead researcher from Microsoft Research. Developed 6DoF tracking and 3D surface reconstruction algorithms for Microsoft Hololens.',
         ZH: '来自微软研究院的首席研究员，在SLAM、立体视觉和深度学习领域深耕多年，为Hololens提供3D表面重建算法。'
-      }
+      },
+      PAPERLINK: 'https://scholar.google.com.sg/citations?user=iL8SeoEAAAAJ&hl=en&oi=ao'
     }, {
       NAME: {
         EN: 'Rui Cai',
@@ -187,7 +189,8 @@ const text = {
       INTRODUCTION: {
         EN: 'Lead researcher from Microsoft Research. Developed core algorithms for Microsoft Hololens, Bing, and 3D Builder.',
         ZH: '来自微软研究院的首席研究员，曾为Hololens、Bing图片搜索，3D打印等微软重量级产品提供核心算法。'
-      }
+      },
+      PAPERLINK: 'https://scholar.google.com.sg/citations?user=6WCyi64AAAAJ&hl=en'
     }, {
       NAME: {
         EN: 'Kuiyuan Yang',
@@ -205,7 +208,8 @@ const text = {
       INTRODUCTION: {
         EN: 'Researcher from Microsoft Research. Expert on deep learning and computer vision. BS and PhD from USTC.',
         ZH: '来自微软研究院的研究员，深度学习和计算机视觉方向的专家。'
-      }
+      },
+      PAPERLINK: 'https://sites.google.com/site/kuiyuanyang/'
     }, {
       NAME: {
         EN: 'Chi Zhang',
@@ -223,60 +227,13 @@ const text = {
       INTRODUCTION: {
         EN: 'Published papers on CVPR/ ICCV/ ECCV/ TVCG. Expert on stereo vision. Ranked 1st at Middlebury stereo 3.0 two times.',
         ZH: '来自微软研究院的首席研究员，Hololens的3D表面重建算法，BS from PKU， PhD from SJTU.'
-      }
+      },
+      PAPERLINK: 'http://chizhang.me/'
     }]
   },
 
   // 媒体动向
-  PRESS: {
-    LABEL: {
-      MODULETITLE: {
-        EN: 'Press',
-        ZH: '媒体动态'
-      },
-      ALLREPORT: {
-        EN: 'See More',
-        ZH: '所有媒体报告'
-      },
-      LINK: {
-        EN: 'Continue Reading',
-        ZH: '原文链接'
-      },
-      SOURCE: {
-        SINA: {
-          EN: 'Sina-auto',
-          ZH: '新浪汽车'
-        }
-      }
-    },
-    ITEMS: [{
-      TITLE: {
-        EN: 'Intel’s Mobileye Purchase Puts Tech Giant into Trucking',
-        ZH: 'DeepMotion宣布与Mobileye实现技术对比标，发布ADAS产品'
-      },
-      DESCRIPTION: {
-        EN: 'The DeepMotion sensor DM-100 is an intelligent ADAS device made of consumer-level stereo cameras, GPS and IMU modules. It not only provides state-of-the-arts ADAS functions such as Lane Departure Warning, Pedestrian Detection, Collision Warning, but also performs localization at 10cm accuracy without replying on RTK. Equipped with our pre-installed HD maps, DM-100 is able to perform environment sensing',
-        ZH: '无图模式下，显示这是一行内文，DeepMotion宣布与Mobileye实现技术对比标，发布ADAS产品，无图模式下，显示这是一行内文，Deep Motion宣布与Mobileye实现技术对比标，发布ADAS产品。无图模式下，显示这是一行内文eye实现技术对比标，发布ADAS产品，无图模式下，显示这是一行内文，Deep Motion宣布与Mobileye实现技术对比标，发布ADAS产品。无图模式下，显示这是一行内文'
-      },
-      PIC: '/config/resource/press/press1.png',
-      DATE: '2017-10-01',
-      LINK: '',
-      SOURCE: 'SINA'
-    }, {
-      TITLE: {
-        EN: 'Intel’s Mobileye Purchase Puts Tech Giant into Trucking',
-        ZH: 'DeepMotion宣布与Mobileye实现技术对比标，发布ADAS产品'
-      },
-      DESCRIPTION: {
-        EN: 'The DeepMotion sensor DM-100 is an intelligent ADAS device made of consumer-level stereo cameras, GPS and IMU modules. It not only provides state-of-the-arts ADAS functions such as Lane Departure Warning, Pedestrian Detection, Collision Warning, but also performs localization at 10cm accuracy without replying on RTK. Equipped with our pre-installed HD maps, DM-100 is able to perform environment sensing',
-        ZH: '无图模式下，显示这是一行内文，DeepMotion宣布与Mobileye实现技术对比标，发布ADAS产品，无图模式下，显示这是一行内文，Deep Motion宣布与Mobileye实现技术对比标，发布ADAS产品。无图模式下，显示这是一行内文eye实现技术对比标，发布ADAS产品，无图模式下，显示这是一行内文，Deep Motion宣布与Mobileye实现技术对比标，发布ADAS产品。无图模式下，显示这是一行内文'
-      },
-      PIC: '',
-      DATE: '2017-09-01',
-      LINK: '',
-      SOURCE: 'SINA'
-    }]
-  },
+  PRESS: PRESS,
 
   // 表单
   FORM: {

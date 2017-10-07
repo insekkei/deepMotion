@@ -186,7 +186,14 @@
       }
       .intro {
         margin: 14px 20px;
+        min-height: 65px;
         text-align: left;
+      }
+      .paperLink a {
+        padding: 6px 20px;
+        border-radius: 20px;
+        border: 1px solid #4A90E2;
+        color: #4A90E2;
       }
       .image {
         width: 150px;
@@ -322,7 +329,7 @@
           &:before {
             width: 43px;
             height: 43px;
-            top: 12px;
+            top: 8px;
           }
           &:after {
             content: "";
@@ -337,9 +344,11 @@
           }
           .title {
             font-weight: normal;
+            padding: 0;
           }
           .desc {
-            margin: 30px -48px;
+            font-weight: normal;
+            margin: 30px 0;
             width: 100%;
           }
           .desc li:before {
@@ -352,11 +361,15 @@
       .MiniScreenWrapper {
         overflow: hidden;
       }
-      .HorizonWrapper {
-        width: 1300px;
+      .Members {
+        flex-wrap: nowrap;
+        width: 100%;
+        margin: 0;
         overflow-x: auto;
       }
       .MemberItem {
+        flex: 0 0 0 auto;
+        min-width: calc(~"88%");
         background: #fff;
         margin: 0 10px;
         border: 1px solid #CFCFCF;
@@ -375,6 +388,17 @@
         .ProductText {
           width: 100%;
           margin: 10px 0;
+        }
+      }
+    }
+
+    .Press {
+      padding-bottom: 30px;
+      .PressWrapper {
+        display: block;
+        .PressItem {
+          width: 100%;
+          margin-bottom: 20px;
         }
       }
     }

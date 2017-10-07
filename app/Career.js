@@ -4,7 +4,7 @@ import joinusText from './assets/config/joinus'
 import {getDMLanguage, setDMLanguage} from './utils'
 import './Career.less'
 
-class Home extends Component {
+class Career extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -95,4 +95,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Career;

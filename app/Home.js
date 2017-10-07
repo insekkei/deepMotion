@@ -82,6 +82,9 @@ class Home extends Component {
                   <div className="intro">
                     {item.INTRODUCTION[lan]}
                   </div>
+                  <div className="paperLink">
+                    <a href={item.PAPERLINK} target="_blank">{text.TEAM.LABEL.ALLPAPERS[lan]}</a>
+                  </div>
                 </div>
               ))
             }
