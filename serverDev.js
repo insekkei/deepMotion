@@ -12,7 +12,11 @@ let root = path.resolve(__dirname, './build/');
 app.use(express.static(root));
 
 // SPA refresh 404 resolution
-app.use(fallback('index.html', {root}));
+// app.use(fallback('index.html', {root}));
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 // server start
 if (!module.parent) {

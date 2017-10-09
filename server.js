@@ -14,11 +14,12 @@ var _expressHistoryApiFallback2 = _interopRequireDefault(_expressHistoryApiFallb
 
 var _config = require('./config');
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : { default: obj };
+}
 
 var port = _config.SERVERCONFIG.port,
     nodeEnv = _config.SERVERCONFIG.nodeEnv;
-
 
 var app = (0, _express2.default)();
 
