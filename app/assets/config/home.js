@@ -168,9 +168,8 @@ const text = {
         PAPER: 50
       },
       INTRODUCTION: {
-
-        EN: 'Lead researcher from Microsoft Research. Published 50+ papers, holding 20+ US/International patents. Developed 6DoF tracking and 3D surface reconstruction algorithms for Microsoft Hololens.  ',
-        ZH: '×微软研究院主管研究员 ×发表50+国际论文，拥有20+国际专利 ×SLAM、三维视觉专家，为Hololens 6-DoF跟踪及表面重建提供核心算法。'
+        EN: ['Lead researcher from Microsoft Research.', 'Published 50+ papers, holding 20+ US/International patents.', 'Developed 6DoF tracking and 3D surface reconstruction algorithms for Microsoft Hololens.'],
+        ZH: ['微软研究院主管研究员', '发表50+国际论文，拥有20+国际专利', 'SLAM、三维视觉专家，为Hololens 6-DoF跟踪及表面重建提供核心算法。']
       },
       PAPERLINK: 'https://scholar.google.com.sg/citations?user=iL8SeoEAAAAJ&hl=en&oi=ao'
     }, {
@@ -188,8 +187,8 @@ const text = {
         PAPER: 50
       },
       INTRODUCTION: {
-        EN: 'Lead researcher from Microsoft Research. Published 50+ papers, holding 20+ US/International patents. Developed core algorithms for Microsoft Hololens, Bing, and 3D Builder.  ',
-        ZH: '×微软研究院主管研究员 ×发表50+国际论文，拥有20+国际专利 ×SLAM、三维视觉专家，为Hololens、Bing图片搜索，3D打印等微软重量级产品提供核心算法。'
+        EN: ['Lead researcher from Microsoft Research.', 'Published 50+ papers, holding 20+ US/International patents.', 'Developed core algorithms for Microsoft Hololens, Bing, and 3D Builder.  '],
+        ZH: ['微软研究院主管研究员', '发表50+国际论文，拥有20+国际专利', 'SLAM、三维视觉专家，为Hololens、Bing图片搜索，3D打印等微软重量级产品提供核心算法。']
       },
       PAPERLINK: 'https://scholar.google.com.sg/citations?user=6WCyi64AAAAJ&hl=en'
     }, {
@@ -207,8 +206,8 @@ const text = {
         PAPER: 30
       },
       INTRODUCTION: {
-        EN: 'Researcher from Microsoft Research.  Published 30+ papers, holding 5 US/International patents.  Expert on deep learning and computer vision. Provides core algorithms for Microsoft Xiaoice and Microsoft Conigtive Service.',
-	   	ZH: '×微软研究院研究员 ×发表30+国际论文，拥有5项国际专利 ×深度学习和计算机视觉专家，为微软小冰、微软视觉认知服务提供核心算法。'
+        EN: ['Researcher from Microsoft Research. ', 'Published 30+ papers, holding 5 US/International patents. ', 'Expert on deep learning and computer vision.', 'Provides core algorithms for Microsoft Xiaoice and Microsoft Conigtive Service.'],
+	   	ZH: ['微软研究院研究员', '发表30+国际论文，拥有5项国际专利', '深度学习和计算机视觉专家', '为微软小冰、微软视觉认知服务提供核心算法。']
       },
       PAPERLINK: 'https://sites.google.com/site/kuiyuanyang/'
     }, {
@@ -226,8 +225,9 @@ const text = {
         PAPER: 50
       },
       INTRODUCTION: {
-        EN: 'Joint PhD from Sun Yat-Sen University and Microsoft Research.  Published papers on CVPR/ICCV/ECCV/TVCG.  Expert on stereo vision. Ranked 1st at Middlebury stereo 3.0 two times. ',
-        ZH: '×中山大学微软研究院联合培养博士 ×在顶级国际会议期刊CVPR/ICCV/ECCV/TVCG上发表论文 ×双目立体视觉专家，两次在Middlebury Stereo排名第一。'},
+        EN: ['Joint PhD from Sun Yat-Sen University and Microsoft Research.', 'Published papers on CVPR/ICCV/ECCV/TVCG.', 'Expert on stereo vision. Ranked 1st at Middlebury stereo 3.0 two times. '],
+        ZH: ['中山大学微软研究院联合培养博士', '在顶级国际会议期刊CVPR/ICCV/ECCV/TVCG上发表论文', '双目立体视觉专家，两次在Middlebury Stereo排名第一。']
+      },
       PAPERLINK: 'http://chizhang.me/'
     }]
   },

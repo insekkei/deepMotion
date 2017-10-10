@@ -1,14 +1,35 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router'
 import Header from './Header'
+import Modal from './Modal'
 import text from './assets/config/home'
+import careerText from './assets/config/joinus'
 import {getDMLanguage, setDMLanguage} from './utils'
 import './Home.less'
 
 class Home extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      showIndex: ''
+    }
+  }
+
+  showModal = (index) => {
+    this.setState({
+      showIndex: index
+    })
+  }
+
+  onCloseModal = () => {
+    this.setState({
+      showIndex: ''
+    })
+  }
 
   render() {
-    const lan = this.props.lan
+    const {lan} = this.props
+    const {showIndex} = this.state
     return (
       <div className="Home">
         <div className="banner">
@@ -82,9 +103,11 @@ class Home extends Component {
                       {text.TEAM.LABEL.PAPER[lan]}
                     </span>
                   </div>
-                  <div className="intro">
-                    {item.INTRODUCTION[lan]}
-                  </div>
+                  <ul className="intro">
+                    {item.INTRODUCTION[lan].map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
                   <div className="paperLink">
                     <a href={item.PAPERLINK} target="_blank">{text.TEAM.LABEL.ALLPAPERS[lan]}</a>
                   </div>
@@ -93,9 +116,19 @@ class Home extends Component {
             }
             </div>
           </div>
+        </div>
 
-          <div className="Joinus">
-            <Link to="career">{text.TEAM.LABEL.JOINUS[lan]}</Link>
+        <div className="Positions Team">
+          <h2 className="module-title">{careerText.LABEL.HIRETITLE[lan]}</h2>
+          <div className="PositionWrapper HorizonWrapper">
+            {
+              careerText.POSITIONS.map((item, index) => (
+                <div className='PositionItem' key={index} onClick={() => this.showModal(index)}>{item.TITLE[lan]}</div>
+              ))
+            }
+          </div>
+          <div className="HorizonWrapper SeeMore">
+            <a href="/career">{careerText.LABEL.SEEMORE[lan]} &gt;</a>
           </div>
         </div>
 
@@ -128,6 +161,11 @@ class Home extends Component {
           </div>
         }
 
+        {showIndex !== '' && <Modal
+          lan={lan}
+          showIndex={showIndex}
+          onClose={this.onCloseModal}
+        />}
       </div>
     );
   }

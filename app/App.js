@@ -52,10 +52,8 @@ class App extends Component {
                 <img src="/image/wechat.png" className="qrcode" />
                 <div className="contact">
                   <p className="tel">{text.BOTTOM.TEL}</p>
-                  <p className="more">
-                    <span className="email">{text.BOTTOM.EMAIL}</span>
-                    <span className="address">{text.BOTTOM.ADDRESS[lan]}</span>
-                  </p>
+                  <p className="email">{text.BOTTOM.EMAIL}</p>
+                  <p className="address">{text.BOTTOM.ADDRESS[lan]}</p>
                 </div>
               </div>
             </div>

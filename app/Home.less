@@ -122,8 +122,10 @@
     }
   }
   .module-title {
+    font-size: 16px;
+    font-weight: normal;
     text-align: center;
-    padding: 40px 0;
+    padding: 30px 0 20px;
   }
   .Products {
     background: #fff;
@@ -163,7 +165,7 @@
   }
 
   .Team {
-    padding: 20px 0 50px;
+    padding: 20px 0 10px;
     background: #f4f4f4;
     .Members {
       display: flex;
@@ -177,8 +179,10 @@
         margin: 14px 0;
       }
       .intro {
-        margin: 14px 20px;
-        min-height: 65px;
+        font-size: 10px;
+        margin: 14px 30px 14px 50px;
+        line-height: 14px;
+        min-height: 120px;
         text-align: left;
       }
       .paperLink a {
@@ -240,6 +244,36 @@
     }
   }
 
+  .Positions {
+    padding-bottom: 92px;
+    .PositionWrapper {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      .PositionItem {
+        flex: 0 48%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border: 1px solid #979797;
+        margin-top: 20px;
+        font-size: 18px;
+        cursor: pointer;
+        &:nth-child(2n-1) {
+          margin-right: 4%;
+        }
+      }
+    }
+    .SeeMore {
+      margin: 0 auto;
+      text-align: right;
+      a {
+        margin-top: 20px;
+        color: #0084ff;
+      }
+    }
+  }
+
   .Press {
     padding-bottom: 80px;
     background: #fff;
@@ -290,12 +324,17 @@
 @media (max-width: 690px) {
   .Home {
     .module-title {
-      padding: 20px 0;
+      padding: 20px 0 15px;
     }
     .banner {
       height: 300px;
       padding-top: 0;
-      .info,
+      .info {
+        margin: 10px 5%;
+        width: 90%;
+        font-size: 14px;
+        line-height: 33px;
+      }
       .Joinus {
         display: none;
       }
@@ -370,6 +409,20 @@
         border: 1px solid #CFCFCF;
       }
     }
+    .Positions {
+      .PositionWrapper {
+        display: block;
+        width: 90%;
+        .PositionItem {
+          font-size: 14px;
+          height: 40px;
+          line-height: 40px;
+          margin-right: 0;
+          width: 100%;
+        }
+      }
+    }
+
     .Products {
       padding-bottom: 20px;
       .ProductText h3 {

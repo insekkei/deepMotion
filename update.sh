@@ -1,14 +1,14 @@
-echo "=========================stopall========================="
-npm run stopall
-
-echo "=========================complete stopall, checkstatus:========================="
-npm run checkstatus
-
 echo "=========================update code begin========================="
 git pull
 
 echo "=========================update code success, install node_modules begin========================="
 npm install
+
+echo "=========================stopall========================="
+npm run stopall
+
+echo "=========================complete stopall, checkstatus:========================="
+npm run checkstatus
 
 echo "=========================install node_modules success, release begin========================="
 npm run release

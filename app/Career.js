@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header'
+import Modal from './Modal'
 import joinusText from './assets/config/joinus'
 import {getDMLanguage, setDMLanguage} from './utils'
 import './Career.less'
@@ -8,54 +9,27 @@ class Career extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      modalShow: false,
       showIndex: ''
     }
   }
 
   showModal = (index) => {
     this.setState({
-      modalShow: true,
       showIndex: index
     })
   }
 
-  hideModal = () => {
+  onCloseModal = () => {
     this.setState({
-      modalShow: false,
       showIndex: ''
     })
   }
 
   render() {
-    const lan = this.props.lan
-    const {modalShow, showIndex} = this.state
+    const {lan} = this.props
+    const {showIndex} = this.state
     return (
       <div className="Career">
-        {showIndex !== '' && <div className="Modal">
-          <div className="ModalWrapper">
-            <span className="Close" onClick={this.hideModal}>+</span>
-            <div className="ModalContent">
-              <h3 className="title">
-                {joinusText.POSITIONS[showIndex].TITLE[lan]}
-              </h3>
-              <p>{joinusText.POSITIONS[showIndex].DESC[lan]}</p>
-              <hr />
-              <p>{joinusText.LABEL.REQUIREMENT[lan]}</p>
-              <ul className="Requirement">
-                {
-                  joinusText.POSITIONS[showIndex].REQUIREMENT[lan].map((item, index) => (
-                    <li className="RequirementItem" key={index}>
-                      {index + 1}. {item}
-                    </li>
-                  ))
-                }
-              </ul>
-              <p>{joinusText.LABEL.SEND[lan]}: <a href="mailto:career@deepmotion. ai">career@deepmotion. ai</a></p>
-            </div>
-          </div>
-        </div>}
-
         <div className="HeaderWrapper">
           <Header lan={lan} changeLan={this.props.changeLan} />
         </div>
@@ -92,6 +66,12 @@ class Career extends Component {
             }
           </ul>
         </div>
+
+        {showIndex !== '' && <Modal
+          lan={lan}
+          showIndex={showIndex}
+          onClose={this.onCloseModal}
+        />}
       </div>
     );
   }
