@@ -6,8 +6,8 @@ const text = {
       ZH: 'DeepMotion'
     },
     SLOGAN: {
-      EN: 'Crowdsourcing the next-generation HD maps for safe autonomy. Localization & Mapping at 10cm accuracy.',
-      ZH: '为下一代自动驾驶提供视觉为主的众包高精地图方案。10厘米级别的精度和定位服务。'
+      EN: 'Crowdsourcing HD maps for safe autonomy. Localization & Mapping at 10cm accuracy.',
+      ZH: '为自动驾驶提供众包高精地图解决方案。10厘米级别三维语义地图及定位。'
     }
   },
 
@@ -55,7 +55,7 @@ const text = {
     },
     DESCRIPTION: {
       EN: ['A 3D semantic map that is not only accurate, but also helps vehicles localize.', 'Localization and mapping both at 10cm accuracy.'],
-      ZH: ['3D语义地图，既准确又能为车辆精确定位', '地图自身精度和定位能力都达到10厘米级别']
+      ZH: ['3D高精度语义地图，精度达厘米级别', '含辅助定位信息， 车辆定位能力达10厘米级']
     }
   }, {
     TITLE: {
@@ -64,7 +64,7 @@ const text = {
     },
     DESCRIPTION: {
       EN: ['Data from cameras and consumer-level sensors, does not need expensive ladars.', 'Fully automated production pipeline, no labor-intensive labeling.'],
-      ZH: ['无需昂贵的雷达，仅需摄像头和普通传感器的数据', '无需劳动密集的标注，全自动生产流水线']
+      ZH: ['无需昂贵雷达和GNSS，仅需一套DM-100智能传感器', '无需劳动密集型标注，全自动生产流水线']
     }
   }, {
     TITLE: {
@@ -73,16 +73,16 @@ const text = {
     },
     DESCRIPTION: {
       EN: ['Lightweight map size, 20KB/km', 'Fully vectorized maps in 3D, fits in local storage.'],
-      ZH: ['20kb每公里的轻量地图', '全矢量化便于本地存储']
+      ZH: ['30KB每公里的轻量地图', '全矢量化，便于本地存储以及实时更新']
     }
   }, {
     TITLE: {
-      EN: 'Real-time',
-      ZH: '实时'
+      EN: 'Crowdsourced',
+      ZH: '众包化'
     },
     DESCRIPTION: {
       EN: ['Real-time 5G uploads of locally preprocessed sensor data.', 'Low cost sensors enable crowdsource deployment at massive scale.'],
-      ZH: ['5G实时上传本地预处理传感器数据', '低成本传感器使众包能规模化']
+      ZH: ['4G实时上传DM-100预处理数据，平均30KB/公里', '低成本传感器规模化众包']
     }
   }],
 
