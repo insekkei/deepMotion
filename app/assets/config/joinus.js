@@ -39,7 +39,7 @@ const joinusText = {
     {
       TITLE: {
         EN: 'SLAM / HD Maps Engineers',
-        ZH: 'SLAM/三维重建算法工程师'
+        ZH: 'SLAM / 三维重建算法工程师'
       },
       DESC: {
         EN: '1. Develop crowd-sourcing based HD map for autonomous driving, including the construction, indexing and update of the HD maps; 2. Develop multi-sensor based 3D localization technology.',
@@ -67,7 +67,7 @@ const joinusText = {
     {
       TITLE: {
         EN: 'Back-end / Full-Stack Software Engineer',
-        ZH: '硬件、车载摄像头工程师'
+        ZH: '后端开发、全栈工程师'
       },
       DESC: {
         EN: '1. Develop DeepMotion\'s data labeling, storage and task scheduling platform; 2. Develop internal visualization and debugging tools and services.',

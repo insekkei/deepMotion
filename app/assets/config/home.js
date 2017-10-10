@@ -282,12 +282,12 @@ const text = {
     TEL: '400-1932-1245',
     EMAIL: 'career@deepmotion.ai',
     ADDRESS: {
-      EN: 'YinGu Dasha, Haidian District, Beijing City, China.',
+      EN: '9F Yingu Plaza, Beijing, China.',
       ZH: '北京市海淀区五道口银谷大厦'
     },
     COMPANY: {
-      EN: 'Deep Motion',
-      ZH: '深动科技公司'
+      EN: 'DeepMotion',
+      ZH: '深动科技'
     },
     COPYRIGHT: ''
   }
