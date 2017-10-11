@@ -28,7 +28,7 @@ const joinusText = {
         ZH: '深度学习算法工程师'
       },
       DESC: {
-        EN: ['1.Develop visual understanding algorithms for autonomous driving;', '2. Model compression for real-time applications.'],
+        EN: ['1. Develop visual understanding algorithms for autonomous driving;', '2. Model compression for real-time applications.'],
         ZH: ['1. 研发无人驾驶中的视觉理解算法；', '2. 研发深度学习模型小型化算法']
       },
       REQUIREMENT: {
