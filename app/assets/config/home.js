@@ -34,7 +34,6 @@ const text = {
     ROUTE: 'career'
   }],
 
-  // 首页头图，默认IMAGE，可选配置VIDEO
   BANNER: {
     TYPE: 'IMAGE',
     VIDEO: '',
@@ -137,7 +136,7 @@ const text = {
         ZH: '所有论文'
       },
       JOINUS: {
-        EN: 'Join us',
+        EN: 'Join Us',
         ZH: '加入我们'
       },
       YEARS: {
@@ -260,7 +259,7 @@ const text = {
         ZH: '合作'
       },
       FORJOB: {
-        EN: 'Jobjs',
+        EN: 'Jobs',
         ZH: '求职'
       },
       COMMENTS: {
@@ -276,8 +275,8 @@ const text = {
 
   BOTTOM: {
     WECHAT: {
-      EN: 'WeChat Subscription',
-      ZH: '微信公众号'
+      EN: 'Contact Us',
+      ZH: '联系方式'
     },
     TEL: '400-1932-1245',
     EMAIL: 'career@deepmotion.ai',

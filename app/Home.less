@@ -1,23 +1,28 @@
 .Home {
   .HeaderWrapper {
-    background: rgba(0,0,0,.46);
+    background: rgba(0,0,0,.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
   }
   .banner {
     padding: 0 0 40px;
-    height: 800px;
+    height: calc(100vh);
     background: url(./assets/config/resource/banner/banner-index.jpg) no-repeat;
     background-size: cover;
     text-align: center;
     .info {
       width: 998px;
-      margin: 226px auto 50px;
-      padding: 60px 0;
+      margin: 0 auto 50px;
+      padding: calc(30vh) 0 60px;
       line-height: 45px;
       font-size: 32px;
       color: #fff;
     }
     .Joinus {
-      padding: 16px 86px;
+      padding: 8px 67px;
       border: 1px solid #04D5FF;
       border-radius: 3px;
       font-size: 24px;
@@ -35,7 +40,12 @@
     color: #fff;
     padding: 40px 0;
     .title {
-      font-size: 2em;
+      font-size: 48px;
+      font-weight: normal;
+    }
+    .desc {
+      font-size: 18px;
+      line-height: 28px;
     }
     .AdvantageItem {
       position: relative;
@@ -44,7 +54,7 @@
         content: "";
         display: inline-block;
         position: absolute;
-        left: 20px;
+        left: 0;
         top: 30px;
         width: 74px;
         height: 74px;
@@ -73,19 +83,10 @@
       .AdvantageItem {
         display: inline-block;
         width: 50%;
-        padding-top: 60px;
+        padding-top: 37px;
         padding-bottom: 40px;
-        border: 1px solid #fff;
-        &:first-child {
-          border-right: 0;
-          border-bottom: 0;
-        }
-        &:nth-child(2) {
-          border-bottom: 0;
-        }
-        &:nth-child(3) {
-          border-right: 0;
-        }
+        padding-right: 40px;
+        vertical-align: text-top;
       }
       .title {
         font-size: 2em;
@@ -98,19 +99,17 @@
 
     &.EN {
       .AdvantageWrapper {
-        width: 800px;
+        padding-left: 30px;
       }
       .AdvantageItem {
-        padding: 20px 20px 20px 114px;
+        padding: 12px 20px 30px 124px;
         .title {
-          margin-right: 0;
+          margin-bottom: 20px;
           padding: 10px 0;
           position: relative;
           left: -20px;
         }
         &:before {
-          width: 54px;
-          height: 54px;
           top: 12px;
         }
         .desc {
@@ -135,20 +134,28 @@
       padding: 0 0 40px;
       img {
         width: 100%;
-        margin: 10px;
       }
       &.item0 {
         flex-direction: row-reverse;
+        .ProductText {
+          padding-left: 30px;
+        }
+      }
+      &.item1 {
+        .ProductText {
+          text-align: right;
+          padding-right: 30px;
+        }
       }
     }
     .ProductText,
     .image {
       flex: 1;
-      padding: 20px;
     }
     .ProductText {
       line-height: 1.5em;
-
+      font-weight: normal;
+      color: #4a4a4a;
       h3 {
         font-size: 32px;
         line-height: 1.5em;
@@ -159,7 +166,7 @@
         margin: 10px 0;
       }
       .Labels {
-        font-weight: normal;
+        font-weight: bold;
       }
     }
   }
@@ -167,7 +174,7 @@
   .Team {
     padding: 20px 0 10px;
     background: #f4f4f4;
-    font-size: 10px;
+    font-size: 12px;
     .Members {
       display: flex;
       margin: 0 auto;
@@ -180,16 +187,34 @@
         margin: 14px 0;
       }
       .title {
-        font-size: 10px;
+        font-size: 12px;
       }
       .intro {
-        font-size: 10px;
-        margin: 14px 30px 14px 50px;
-        line-height: 14px;
-        min-height: 120px;
+        font-size: 12px;
+        font-weight: normal;
+        color: #4a4a4a;
+        margin: 14px 40px 14px 40px;
+        line-height: 16px;
+        min-height: 144px;
         text-align: left;
+        li {
+          list-style: none;
+          position: relative;
+          padding-left: 10px;
+          &:before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 0;
+            display: inline-block;
+            width: 3px;
+            height: 3px;
+            background: #4a4a4a;
+          }
+        }
       }
       .paperLink a {
+        font-weight: normal;
         padding: 6px 20px;
         border-radius: 20px;
         border: 1px solid #4A90E2;
@@ -218,6 +243,7 @@
     }
     .name {
       font-size: 20px;
+      font-weight: normal;
     }
     .qualifications {
       >span {
@@ -250,6 +276,7 @@
 
   .Positions {
     padding-bottom: 92px;
+    font-weight: normal;
     .PositionWrapper {
       margin: 0 auto;
       display: flex;
@@ -265,6 +292,9 @@
         cursor: pointer;
         &:nth-child(2n-1) {
           margin-right: 4%;
+        }
+        &:hover {
+          background: #C6C6C6;
         }
       }
     }
@@ -368,6 +398,7 @@
             width: 43px;
             height: 43px;
             top: 8px;
+            left: 20px;
           }
           &:after {
             content: "";
@@ -441,6 +472,7 @@
         }
         .image,
         .ProductText {
+          text-align: left !important;
           width: 100%;
           margin: 10px 0;
           padding: 0;

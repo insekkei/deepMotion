@@ -37,7 +37,9 @@ class Modal extends Component {
             <h3 className="title">
               {joinusText.POSITIONS[showIndex].TITLE[lan]}
             </h3>
-            <p>{joinusText.POSITIONS[showIndex].DESC[lan]}</p>
+            <ul>{joinusText.POSITIONS[showIndex].DESC[lan].map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}</ul>
             <hr />
             <p>{joinusText.LABEL.REQUIREMENT[lan]}</p>
             <ul className="Requirement">

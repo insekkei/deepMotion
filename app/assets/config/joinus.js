@@ -28,8 +28,8 @@ const joinusText = {
         ZH: '深度学习算法工程师'
       },
       DESC: {
-        EN: '1.Develop visual understanding algorithms for autonomous driving; 2. Model compression for real-time applications.',
-        ZH: '1. 研发无人驾驶中的视觉理解算法；2. 研发深度学习模型小型化算法 '
+        EN: ['1.Develop visual understanding algorithms for autonomous driving;', '2. Model compression for real-time applications.'],
+        ZH: ['1. 研发无人驾驶中的视觉理解算法；', '2. 研发深度学习模型小型化算法']
       },
       REQUIREMENT: {
         EN: ['Experience on fundamental computer vision tasks (e.g., image classification, semantic segmentation, object detection, object tracking etc).', 'Solid knowledge on machine learning and deep learning.', 'Hands on experience with at least one deep learning framework.'],
@@ -42,8 +42,8 @@ const joinusText = {
         ZH: 'SLAM/三维重建算法工程师'
       },
       DESC: {
-        EN: '1. Develop crowd-sourcing based HD map for autonomous driving, including the construction, indexing and update of the HD maps; 2. Develop multi-sensor based 3D localization technology.',
-        ZH: '1. 研发无人驾驶中的众包高精地图地图构建技术；2. 研发基于多传感器融合的定位技术'
+        EN: ['1. Develop crowd-sourcing based HD map for autonomous driving, including the construction, indexing and update of the HD maps; ', '2. Develop multi-sensor based 3D localization technology.'],
+        ZH: ['1. 研发无人驾驶中的众包高精地图地图构建技术；', '2. 研发基于多传感器融合的定位技术']
       },
       REQUIREMENT: {
         EN: ['Familiarity with state-of-the-art SLAM algorithms.', 'Familiarity with Kalman filtering and its variants.', 'Familiarity with signal processing of sensors like Lidar, IMU, and GPS.', 'Experience with C/C++ development. Experience with ROS preferred.', 'Background of stereo vision preferred.'],
@@ -56,8 +56,8 @@ const joinusText = {
         ZH: '硬件、车载摄像头工程师'
       },
       DESC: {
-        EN: '1. Supervise high-level camera system design; 2. Implement image processing algorithms on FPGA using Verilog; 3. Design software/firmware of USB/Ethernet modules; 4. Communicate with vendors, supervise product manufacturing process.',
-        ZH: '1. 负责车载摄像头模块总体设计；2. 负责用Verilog在FPGA上实现图像处理算法；3. 负责硬件模块与上位机通讯设计；4. 负责与外包商沟通实现试验品生产'
+        EN: ['1. Supervise high-level camera system design; ', '2. Implement image processing algorithms on FPGA using Verilog; ', '3. Design software/firmware of USB/Ethernet modules; ', '4. Communicate with vendors, supervise product manufacturing process.'],
+        ZH: ['1. 负责车载摄像头模块总体设计；', '2. 负责用Verilog在FPGA上实现图像处理算法；', '3. 负责硬件模块与上位机通讯设计；', '4. 负责与外包商沟通实现试验品生产']
       },
       REQUIREMENT: {
         EN: ['Familiarity with camera and optical system design. Experiences on multiple camera systems preferred.', 'Familiarity with camera interfaces, such as LVDS, USB, MIPI and CSI.', 'Experience on synchronization among multiple sensors, such as lidars and cameras.', 'Experience on Verilog programming.', '2+ years experience on C programming and firmware development.'],
@@ -70,8 +70,8 @@ const joinusText = {
         ZH: '硬件、车载摄像头工程师'
       },
       DESC: {
-        EN: '1. Develop DeepMotion\'s data labeling, storage and task scheduling platform; 2. Develop internal visualization and debugging tools and services.',
-        ZH: '1. 开发公司后端数据支持平台；2. 开发团队所需算法调试工具、数据可视化工具'
+        EN: ['1. Develop DeepMotion\'s data labeling, storage and task scheduling platform;', ' 2. Develop internal visualization and debugging tools and services.'],
+        ZH: ['1. 开发公司后端数据支持平台；', '2. 开发团队所需算法调试工具、数据可视化工具']
       },
       REQUIREMENT: {
         EN: ['Proficiency in at least one of the following: Python, Ruby or Node.js.', 'Familiarity with RESTful service. Proficiency in at least one web frameworks: Django, Flask, Rails.', 'Familiarity with Mysql, Redis or Mongodb.', 'Must be a fast learner.'],

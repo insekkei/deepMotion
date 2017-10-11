@@ -9,7 +9,7 @@ class Nav extends Component {
     const pathname = location.pathname
     return (
       <div className="App-header HorizonWrapper">
-        <img src="/image/logo-bottom.png" className="logo" />
+        <Link to='/home'><img src="/image/logo-bottom.png" className="logo" /></Link>
         {lan === 'ZH' && <span>深动科技</span>}
         <div className="Navigation">
           {
@@ -20,13 +20,13 @@ class Nav extends Component {
             ))
           }
           {
-            lan === 'ZH' && <span className="changeLanWrapper">
-              <span className="ChangeLan" onClick={() => this.props.changeLan('EN')}>EN</span> | 中
+            lan === 'ZH' && <span className="changeLanWrapper" onClick={() => this.props.changeLan('EN')}>
+              <span className="ChangeLan">EN</span> | 中
             </span>
           }
           {
-            lan === 'EN' && <span className="changeLanWrapper">
-              EN | <span className="ChangeLan" onClick={() => this.props.changeLan('ZH')}>中</span>
+            lan === 'EN' && <span className="changeLanWrapper" onClick={() => this.props.changeLan('ZH')}>
+              EN | <span className="ChangeLan">中</span>
             </span>
           }
           <img className="toggleLan" src="/image/gottleLan.png"

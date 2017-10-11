@@ -1,19 +1,25 @@
 .Career {
+  padding-top: 100px;
   background: #fff;
   .HeaderWrapper {
     background:#17495F;
     background:-moz-linear-gradient(left, #115A78, #0E212A);
     background:-webkit-gradient(linear, 0 0, 0 right, from(#115A78), to(#0E212A));
     background:-o-linear-gradient(left, #115A78, #0E212A);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
   }
   .App-header {
     margin: 0 auto;
   }
   .Introduction {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin: 0 auto;
-    padding: 20px 0 40px;
+    padding: 0 0 40px;
   }
   .image,
   .text {
@@ -23,10 +29,14 @@
     width: 100%;
   }
   .text {
-    margin-left: 100px;
+    color: #4a4a4a;
+    margin-left: 30px;
     font-weight: normal;
     p {
       margin: 1em 0;
+      &:first-child {
+        margin-top: 0;
+      }
     }
   }
   .module-title {
@@ -66,9 +76,15 @@
       }
       h3 {
         font-weight: normal;
+        margin-bottom: 8px;
       }
-      p {
+      ul {
         color: #9B9B9B;
+        font-weight: normal;
+        padding-left: 20px;
+        li {
+          list-style: disc;
+        }
       }
     }
   }
@@ -76,6 +92,7 @@
 
 @media (max-width: 690px) {
   .Career {
+    padding-top: 60px;
     .Introduction {
       display: block;
       width: 100%;

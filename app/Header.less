@@ -13,6 +13,7 @@
       &.current {
         position: relative;
         color: #41D1EE;
+        font-weight: normal;
         &:before {
           content: "";
           display: inline-block;
@@ -49,14 +50,20 @@
   .career.ZH:after {
     content: "招";
   }
-  .ChangeLan {
+  .changeLanWrapper {
     color: #41D1EE;
+    font-weight: normal;
     cursor: pointer;
+    padding: 5px 10px;
+  }
+  .ChangeLan {
+    color: #fff;
+    font-weight: lighter;
   }
 }
 .App-header {
   color: #fff;
-  padding: 7px 0;
+  padding: 5px 0;
   .logo {
     display: inline-block;
     width: 128px;

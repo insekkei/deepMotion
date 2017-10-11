@@ -60,7 +60,11 @@ class Career extends Component {
                   onClick={() => this.showModal(index)}
                   className="PositionItem">
                   <h3>{item.TITLE[lan]}</h3>
-                  <p>{item.DESC[lan]}</p>
+                  <ul>
+                    {item.DESC[lan].map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
                 </li>
               ))
             }
