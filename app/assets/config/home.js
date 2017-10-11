@@ -220,9 +220,8 @@ const text = {
         ZH: '联合创始人 / 研发总监'
       },
       QUALIFICATIONS: {
-        YEARS: 10,
-        PATENT: 20,
-        PAPER: 50
+        YEARS: 6,
+        PAPER: 6
       },
       INTRODUCTION: {
         EN: ['Joint PhD from Sun Yat-Sen University and Microsoft Research.', 'Published papers on CVPR/ICCV/ECCV/TVCG.', 'Expert on stereo vision. Ranked 1st at Middlebury stereo 3.0 two times. '],
