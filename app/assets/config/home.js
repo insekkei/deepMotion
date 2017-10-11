@@ -219,9 +219,8 @@ const text = {
         ZH: '联合创始人 / 研发总监'
       },
       QUALIFICATIONS: {
-        YEARS: 10,
-        PATENT: 20,
-        PAPER: 50
+        YEARS: 6,
+        PAPER: 6
       },
       INTRODUCTION: {
         EN: ['Joint PhD from Sun Yat-Sen University and Microsoft Research.', 'Published papers on CVPR/ICCV/ECCV/TVCG.', 'Expert on stereo vision. Ranked 1st at Middlebury stereo 3.0 two times. '],
@@ -281,12 +280,12 @@ const text = {
     TEL: '400-1932-1245',
     EMAIL: 'career@deepmotion.ai',
     ADDRESS: {
-      EN: 'YinGu Dasha, Haidian District, Beijing City, China.',
+      EN: '9F Yingu Plaza, Beijing, China.',
       ZH: '北京市海淀区五道口银谷大厦'
     },
     COMPANY: {
-      EN: 'Deep Motion',
-      ZH: '深动科技公司'
+      EN: 'DeepMotion',
+      ZH: '深动科技'
     },
     COPYRIGHT: ''
   }
