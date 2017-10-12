@@ -11,14 +11,20 @@ class Modal extends Component {
     }
   }
 
-  showModal = (index) => {
-    this.setState({
-      modalShow: true,
-      showIndex: index
-    })
+  componentDidMount () {
+    this.scrollHeight = document.documentElement.scrollTop || document.body.scrollTop;
+    const root = document.getElementById('root')
+    root.style.position = 'fixed'
+    root.style.width = '100%'
+    root.style.top =  -this.scrollHeight + 'px'
   }
 
   hideModal = () => {
+    const root = document.getElementById('root')
+    root.style = {}
+    document.body.scrollTop = this.scrollHeight
+    document.documentElement.scrollTop = this.scrollHeight
+
     this.setState({
       modalShow: false,
       showIndex: ''
@@ -46,7 +52,7 @@ class Modal extends Component {
               {
                 joinusText.POSITIONS[showIndex].REQUIREMENT[lan].map((item, index) => (
                   <li className="RequirementItem" key={index}>
-                    {index + 1}. {item}
+                    {item}
                   </li>
                 ))
               }

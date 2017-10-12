@@ -6,8 +6,12 @@ const text = {
       ZH: 'DeepMotion'
     },
     SLOGAN: {
-      EN: 'Crowdsourcing HD maps for safe autonomy. Localization & Mapping at 10cm accuracy.',
-      ZH: '为自动驾驶提供众包高精地图解决方案。10厘米级别三维语义地图及定位。'
+      EN: `Crowdsourcing HD maps for
+        safe autonomy.
+        Localization & Mapping at
+        10cm accuracy.`,
+      ZH: `为自动驾驶提供众包高精地图解决方案
+        10厘米级别三维语义地图及定位。`
     }
   },
 

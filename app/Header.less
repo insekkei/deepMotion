@@ -2,7 +2,12 @@
   display: flex;
   align-items: center;
   .logo + span {
-    margin: 16px 0 0 6px;
+    margin-left: 15px;
+    position: relative;
+    top: 1px;
+    color: #fff;
+    font-size: 20px;
+    vertical-align: bottom;
   }
   .Navigation {
     margin-left: auto;
@@ -10,6 +15,10 @@
       position: relative;
       margin: 10px 20px;
       color: #fff;
+      opacity: .7;
+      &:hover {
+        opacity: 1;
+      }
       &.current {
         position: relative;
         color: #41D1EE;
@@ -34,21 +43,22 @@
   .career:after{
     content: "H";
     position: absolute;
-    top: 2px;
+    bottom: 2px;
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     margin-left: 4px;
-    background: #41D1EE;
+    background: #04d5ff;
     color: #565656;
     font-weight: normal;
     text-align: center;
-    line-height: 12px;
-    font-size: 10px;
+    line-height: 14px;
+    font-size: 9px;
     border-radius: 2px;
   }
   .career.ZH:after {
     content: "招";
+    bottom: 4px;
   }
   .changeLanWrapper {
     color: #41D1EE;

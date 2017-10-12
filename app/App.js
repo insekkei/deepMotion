@@ -81,7 +81,7 @@ class App extends Component {
 
             <textarea onChange={(e) => this.changeForm('Comments', e.target.value)} placeholder={text.FORM.LABEL.COMMENTS[lan]} />
             <div className="action">
-              <a href={`mailto:career@deepmotion.ai?subject=for ${formData.Type}&body=Name: ${formData.Name}; Phone:  ${formData.Tel}; Content: ${formData.Comments}`}>
+              <a href={`mailto:career@deepmotion.ai?subject=for ${formData.Type || ''}&body=Name: ${formData.Name || ''}; Email: ${formData.Email || ''}; Phone:  ${formData.Tel || ''}; Content: ${formData.Comments || ''}`}>
                 {text.FORM.LABEL.SENDBUTTON[lan]}
               </a>
             </div>

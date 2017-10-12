@@ -32,7 +32,7 @@ class Home extends Component {
     const {showIndex} = this.state
     return (
       <div className="Home">
-        <div className="banner">
+        <div className={`banner ${lan}`}>
           <div className="HeaderWrapper">
             <Header lan={lan} changeLan={this.props.changeLan} />
           </div>
@@ -94,10 +94,11 @@ class Home extends Component {
                       <span className="Number">{item.QUALIFICATIONS.YEARS}</span>+<br />
                       {text.TEAM.LABEL.YEARS[lan]}
                     </span>
-                    <span>
+                    {item.QUALIFICATIONS.PATENT && <span>
                       <span className="Number">{item.QUALIFICATIONS.PATENT}</span>+<br />
                       {text.TEAM.LABEL.PATENT[lan]}
-                    </span>
+                    </span>}
+
                     <span>
                       <span className="Number">{item.QUALIFICATIONS.PAPER}</span>+<br />
                       {text.TEAM.LABEL.PAPER[lan]}
@@ -128,7 +129,7 @@ class Home extends Component {
             }
           </div>
           <div className="HorizonWrapper SeeMore">
-            <a href="/career">{careerText.LABEL.SEEMORE[lan]} &gt;</a>
+            <Link to="career">{careerText.LABEL.SEEMORE[lan]} &gt;</Link>
           </div>
         </div>
 

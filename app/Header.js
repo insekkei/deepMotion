@@ -9,12 +9,12 @@ class Nav extends Component {
     const pathname = location.pathname
     return (
       <div className="App-header HorizonWrapper">
-        <Link to='/home'><img src="/image/logo-bottom.png" className="logo" /></Link>
-        {lan === 'ZH' && <span>深动科技</span>}
+        <Link to='/home'><img src="/image/logo-bottom.png" className="logo" />{lan === 'ZH' && <span>深动科技</span>}</Link>
+
         <div className="Navigation">
           {
             text.NAVIGATIONS.map(item => (
-              <Link key={item.ROUTE} className={`${item.ROUTE} ${lan} ${pathname.match(item.ROUTE) ? 'current' : ''}`} to={item.ROUTE}>
+              <Link key={item.ROUTE} className={`${item.ROUTE} ${lan} ${pathname.match(item.ROUTE) ? 'current' : ''}  ${(pathname === '/' && item.ROUTE === 'home') ? 'current' : ''}`} to={item.ROUTE}>
                 {item.LABEL[lan]}
               </Link>
             ))
