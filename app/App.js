@@ -49,7 +49,7 @@ class App extends Component {
             <div className="WeChat">
               <p className="WeChat-title">{text.BOTTOM.WECHAT[lan]}</p>
               <div className="WeChat-content">
-                <img src="/image/wechat.png" className="qrcode" />
+                <img src="/image/wechat.jpg" className="qrcode" />
                 <div className="contact">
                   <p className="tel">{text.BOTTOM.TEL}</p>
                   <p className="email">{text.BOTTOM.EMAIL}</p>

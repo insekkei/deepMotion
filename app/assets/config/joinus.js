@@ -12,9 +12,17 @@ const joinusText = {
       EN: 'OPEN POSITIONS',
       ZH: '在招职位'
     },
+    RESPONSIBILITY: {
+      EN: 'Job Responsibilities:',
+      ZH: '职位职责：'
+    },
     REQUIREMENT: {
       EN: 'Job Requirements:',
-      ZH: '要求（掌握一项即可）：'
+      ZH: '任职要求：'
+    },
+    REQUIREMENTBB: {
+      EN: 'Job Requirements (Proficiency in at least one of the following):',
+      ZH: '任职要求（至少精通其中一项）：'
     },
     SEND: {
       EN: 'Send your resume to us',

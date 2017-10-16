@@ -13,41 +13,46 @@ class Modal extends Component {
 
   componentDidMount () {
     this.scrollHeight = document.documentElement.scrollTop || document.body.scrollTop;
-    const root = document.getElementById('root')
-    root.style.position = 'fixed'
-    root.style.width = '100%'
-    root.style.top =  -this.scrollHeight + 'px'
+    document.documentElement.style.overflow = 'hidden'
+    // root.style.overflow = 'hidden'
+    // root.style.position = 'fixed'
+    // root.style.width = '100%'
+    // root.style.top =  -this.scrollHeight + 'px'
   }
 
-  hideModal = () => {
-    const root = document.getElementById('root')
-    root.style = {}
-    document.body.scrollTop = this.scrollHeight
-    document.documentElement.scrollTop = this.scrollHeight
+  hideModal = (e) => {
+    const {className} = e.target
+    if (className === 'Modal' || className === 'Close') {
+      this.setState({
+        modalShow: false,
+        showIndex: ''
+      })
+      document.documentElement.style.overflow = 'auto'
+      this.props.onClose()
+    }
 
-    this.setState({
-      modalShow: false,
-      showIndex: ''
-    })
-    this.props.onClose()
+    // root.style = {}
+    // document.body.scrollTop = this.scrollHeight
+    // document.documentElement.scrollTop = this.scrollHeight
   }
 
   render() {
     const {modalShow} = this.state
     const {showIndex, lan} = this.props
     return (
-      <div className="Modal">
+      <div className="Modal" onClick={this.hideModal}>
         <div className="ModalWrapper">
           <span className="Close" onClick={this.hideModal}>+</span>
           <div className="ModalContent">
             <h3 className="title">
               {joinusText.POSITIONS[showIndex].TITLE[lan]}
             </h3>
+            <p>{joinusText.LABEL.RESPONSIBILITY[lan]}</p>
             <ul>{joinusText.POSITIONS[showIndex].DESC[lan].map((item, index) => (
               <li key={index}>{item}</li>
             ))}</ul>
             <hr />
-            <p>{joinusText.LABEL.REQUIREMENT[lan]}</p>
+            <p>{showIndex === 1 ? joinusText.LABEL.REQUIREMENTBB[lan] : joinusText.LABEL.REQUIREMENT[lan]}</p>
             <ul className="Requirement">
               {
                 joinusText.POSITIONS[showIndex].REQUIREMENT[lan].map((item, index) => (

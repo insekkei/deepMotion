@@ -66,7 +66,7 @@ const text = {
       ZH: '低成本'
     },
     DESCRIPTION: {
-      EN: ['Data from cameras and consumer-level sensors, does not need expensive ladars.', 'Fully automated production pipeline, no labor-intensive labeling.'],
+      EN: ['Data from cameras and consumer-level sensors, does not need expensive lidars.', 'Fully automated production pipeline, no labor-intensive labeling.'],
       ZH: ['无需昂贵雷达和GNSS，仅需一套DM-100智能传感器', '无需劳动密集型标注，全自动生产流水线']
     }
   }, {
