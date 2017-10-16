@@ -6,7 +6,6 @@ class Modal extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      modalShow: false,
       showIndex: ''
     }
   }
@@ -14,30 +13,20 @@ class Modal extends Component {
   componentDidMount () {
     this.scrollHeight = document.documentElement.scrollTop || document.body.scrollTop;
     document.documentElement.style.overflow = 'hidden'
-    // root.style.overflow = 'hidden'
-    // root.style.position = 'fixed'
-    // root.style.width = '100%'
-    // root.style.top =  -this.scrollHeight + 'px'
   }
 
   hideModal = (e) => {
     const {className} = e.target
     if (className === 'Modal' || className === 'Close') {
       this.setState({
-        modalShow: false,
         showIndex: ''
       })
       document.documentElement.style.overflow = 'auto'
       this.props.onClose()
     }
-
-    // root.style = {}
-    // document.body.scrollTop = this.scrollHeight
-    // document.documentElement.scrollTop = this.scrollHeight
   }
 
   render() {
-    const {modalShow} = this.state
     const {showIndex, lan} = this.props
     return (
       <div className="Modal" onClick={this.hideModal}>
